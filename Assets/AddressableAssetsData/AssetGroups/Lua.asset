@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Lua
+  m_EditorClassIdentifier: 
+  m_GroupName: Lua
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 76489c0e309924d65a7c2224f2622370
+  m_SerializeEntries:
+  - m_GUID: 32c27b01584bb4c6db81d32c04c313d1
+    m_Address: Config.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: a9971bfe0dac14565a812c9866cd587c
+    m_Address: GameMain.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: 816351de0e49444d5b76a3e56cd55634
+    m_Address: Global.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: c81aabd7a218240788dd8fe91fb1258b
+    m_Address: BaseClass.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: 27cabd02478ad47bda6c935e49366e56
+    m_Address: Singleton.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: efd10360eb3de4051bb619c134dfea13
+    m_Address: GameSceneController.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: a1c6fefa1f3464c3dbfcd69adf81b5ce
+    m_Address: ChessManger.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: 08e16a910b0ec46ed98fb97daf1e43ed
+    m_Address: BottomManager.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: 6b8b3f9e643c64558a92c7e2f265a79c
+    m_Address: BlockGroup.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: acb30977afd4a44c5baea09ac83900ab
+    m_Address: Block.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  - m_GUID: f081742ac08c64e7e9c603b6379ecf17
+    m_Address: HotfixScript.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 4866dbb60a5d647738b682a52b92e771, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d162dd59f4f4d4b908b82236d8f0ece1, type: 2}
+    - {fileID: 11400000, guid: 1a18d7797efc0495fa1536b481a2a26d, type: 2}
