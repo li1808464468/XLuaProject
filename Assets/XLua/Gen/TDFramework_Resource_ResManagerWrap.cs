@@ -21,7 +21,7 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(TDFramework.Resource.ResManager);
-			Utils.BeginObjectRegister(type, L, translator, 0, 7, 1, 1);
+			Utils.BeginObjectRegister(type, L, translator, 0, 8, 1, 1);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "DownloadDependenciesAsync", _m_DownloadDependenciesAsync);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetDownloadSize", _m_GetDownloadSize);
@@ -30,6 +30,7 @@ namespace XLua.CSObjectWrap
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "ReleaseInstance", _m_ReleaseInstance);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetTextAsset", _m_GetTextAsset);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetGameObject", _m_GetGameObject);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "LoadAllLuaFils", _m_LoadAllLuaFils);
 			
 			
 			Utils.RegisterFunc(L, Utils.GETTER_IDX, "TestCode", _g_get_TestCode);
@@ -374,6 +375,33 @@ namespace XLua.CSObjectWrap
                     
                     
                     return 1;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_LoadAllLuaFils(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                TDFramework.Resource.ResManager gen_to_be_invoked = (TDFramework.Resource.ResManager)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    
+                    gen_to_be_invoked.LoadAllLuaFils(  );
+                    
+                    
+                    
+                    return 0;
                 }
                 
             } catch(System.Exception gen_e) {

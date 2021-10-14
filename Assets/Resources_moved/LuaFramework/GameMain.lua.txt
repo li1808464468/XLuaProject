@@ -6,6 +6,8 @@
 
 require("Global")
 require("HotfixScript")
+require("Singleton")
+require("TestSingleton")
 
 GameMain = {}
 
@@ -18,6 +20,8 @@ function GameMain:Start()
     
     
     
+    local test = TestSingleton:GetInstance().DebugA()
+   
     
     
 end

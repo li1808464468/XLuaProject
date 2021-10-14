@@ -9,9 +9,11 @@
 -- local TimerManager = BaseClass("TimerManager", Singleton)
 --]]
 
-local Singleton = BaseClass("Singleton");
+Singleton = BaseClass("Singleton");
 
 local function __init(self)
+
+    print("Single Init")
     assert(rawget(self._class_type, "Instance") == nil, self._class_type.__cname.." to create singleton twice!")
     rawset(self._class_type, "Instance", self)
 end
@@ -26,12 +28,17 @@ end
 
 -- 不要重写
 local function GetInstance(self)
+    
     if rawget(self, "Instance") == nil then
         rawset(self, "Instance", self.New())
     end
     assert(self.Instance ~= nil)
     return self.Instance
 end
+
+
+
+
 
 -- 不要重写
 local function Delete(self)
@@ -45,13 +52,6 @@ Singleton.GetInstance = GetInstance
 Singleton.Destory = Destory
 
 return Singleton;
-
-
-
-
-
-
-
 
 
 

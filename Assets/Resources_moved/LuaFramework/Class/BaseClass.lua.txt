@@ -30,7 +30,7 @@ ClassType = {
 function BaseClass(classname, super)
     assert(type(classname) == "string" and #classname > 0)
     -- 生成一个类类型
-    local class_type = {}
+    local  class_type = {}
 
     -- 在创建对象的时候自动调用
     class_type.__init = false
@@ -39,7 +39,7 @@ function BaseClass(classname, super)
     class_type.__ctype = ClassType.class
 
     class_type.super = super
-    function New(...)
+    class_type.New = function(...)
         -- 生成一个类对象
         local obj = {}
         obj._class_type = class_type

@@ -10,7 +10,6 @@ require("BaseClass")
 
 
 Config = require("Config")
-Singleton = require("Singleton")
 
 --- Unity 内置类型
 

@@ -83,6 +83,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - must
     - lua
+  - m_GUID: 01a8f698a19794eac95109bacbf646b1
+    m_Address: TestSingleton.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - must
+    - lua
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4866dbb60a5d647738b682a52b92e771, type: 2}
   m_SchemaSet:
